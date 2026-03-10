@@ -1,6 +1,6 @@
 {
   "name": "guildaipmagent",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Guild.ai PM Agent — Autonomous roadmap consequence simulator",
   "type": "module",
   "bin": {
