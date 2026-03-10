@@ -2,7 +2,7 @@
 
 > A Guild.ai PM Agent that simulates the downstream consequences of roadmap sequencing decisions — built as part of the Guild application.
 
-![Guild PM Agent preview](https://raw.githubusercontent.com/renantrendt/guild-pm-agent/main/preview.png)
+![Guild PM Agent preview](https://raw.githubusercontent.com/renantrendt/guild-pm-agent/main/guild-pm-agent/preview.png)
 
 ---
 
