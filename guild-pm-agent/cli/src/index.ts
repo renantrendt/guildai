@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import chalk from 'chalk'
 import ora from 'ora'
-import * as readline from 'readline'
 import { buildGraph, hasCircularDependency } from './dependency.js'
 import { generateScenarios } from './scenarios.js'
 import { showSplash, showStory, showGitHubPull, animateFireWhileWaiting, showCursor } from './cinema.js'
@@ -14,7 +13,6 @@ const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
 
 async function promptHidden(question: string): Promise<string> {
   return new Promise((resolve) => {
-    const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
     process.stdout.write(question)
     let input = ''
 
@@ -24,19 +22,14 @@ async function promptHidden(question: string): Promise<string> {
         process.stdin.removeListener('data', onData)
         process.stdin.setRawMode(false)
         process.stdin.pause()
-        rl.close()
         process.stdout.write('\n')
         resolve(input)
       } else if (str === '\x7F' || str === '\b') {
-        if (input.length > 0) {
-          input = input.slice(0, -1)
-          process.stdout.write('\b \b')
-        }
+        if (input.length > 0) input = input.slice(0, -1)
       } else if (str === '\x03') {
         process.exit(0)
       } else {
         input += str
-        process.stdout.write('•')
       }
     }
 

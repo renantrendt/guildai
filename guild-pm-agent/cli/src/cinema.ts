@@ -38,6 +38,7 @@ export async function showSplash(): Promise<void> {
   console.log(chalk.dim('  ─────────────────────────────────────────────────────────────'))
   console.log(chalk.dim('  A Guild.ai PM Agent  ·  Roadmap Consequence Simulator'))
   console.log(chalk.dim('  ─────────────────────────────────────────────────────────────'))
+  console.log(chalk.dim('                                                        v1.0.4'))
   console.log()
   await sleep(800)
 }
