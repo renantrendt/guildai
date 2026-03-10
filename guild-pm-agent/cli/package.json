@@ -4,7 +4,7 @@
   "description": "Guild.ai PM Agent — Autonomous roadmap consequence simulator",
   "type": "module",
   "bin": {
-    "guildaipmagent": "./dist/index.js"
+    "guildaipmagent": "dist/index.js"
   },
   "files": [
     "dist/"
