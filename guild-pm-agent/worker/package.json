@@ -1,0 +1,15 @@
+{
+  "name": "guild-pm-agent-worker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "secrets": "wrangler secret put ANTHROPIC_API_KEY && wrangler secret put ACCESS_CODE"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250310.0",
+    "typescript": "^5.7.2",
+    "wrangler": "^3.0.0"
+  }
+}

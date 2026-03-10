@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Cloudflare Wrangler
+.wrangler/
+
+# Environment / secrets
+.env
+.env.local
+
+# OS
+.DS_Store
+
+# Reports generated at runtime
+reports/
